@@ -1,5 +1,5 @@
 class BooksController < ApplicationController
-    http_basic_authenticate_with name: "soumya", password: "1234", except: [:index, :show]
+    http_basic_authenticate_with name: "soumya", password: "12345", except: [:index, :show]
   
     def index
       @books= Book.all
@@ -44,7 +44,6 @@ class BooksController < ApplicationController
       
       redirect_to books_path
     end
-
     private def book_params
       params.require(:book).permit(:title, :author, :description)
     end

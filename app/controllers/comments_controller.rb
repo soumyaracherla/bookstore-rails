@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-    http_basic_authenticate_with name: "soumya", password: "1234", only: [:destroy]
+    http_basic_authenticate_with name: "soumya", password: "12345", only: [:destroy]
     def create
         @book = Book.find(params[:book_id])
         @comment = @book.comments.create(comment_params)
@@ -11,6 +11,7 @@ class CommentsController < ApplicationController
         @comment = @book.comments.find(params[:id])
         @comment.destroy
         redirect_to book_path(@book)
+        
     end
 
     private def comment_params

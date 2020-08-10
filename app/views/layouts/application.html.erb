@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+  <img src="https://tse4.mm.bing.net/th?id=OIP.qE3jZi8USmmHUAAeg84PhQHaHZ&pid=Api&P=0&w=300&h=300 type="logo">
+  <a style= "color: yellow" class="navbar-brand" href="#"><b>BOOK STORE</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav navbar-right">
+      <ul class="nav navbar-nav ">
+        <li><%= link_to "Home", home_path %>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Add Book", new_book_path %>
+      </ul>
+      
+    </div>
+  </div>
+  </nav>
+
+  <div class="container">
+    <%= yield %>
+  </div>
+    </body>
+</html>

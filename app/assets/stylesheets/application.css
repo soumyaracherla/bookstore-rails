@@ -1,0 +1,28 @@
+body{
+    background-image: url(https://tse4.mm.bing.net/th?id=OIP.6ejikSuK39Na4iPFzFfSygHaFS&pid=Api&P=0&w=216&h=156.jpg,gif);
+    font-style: arial;
+    color: black;
+}
+
+li{
+    display: inline-block;
+    font-size: 20px ;
+}
+
+a{
+    font-weight: bold;
+    color: honeydew;
+}
+
+p{
+    color: black;
+    font-weight: bold;
+}
+
+.navbar{
+    background-color: black;
+}
+
+img{
+    height:50px;
+}

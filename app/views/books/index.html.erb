@@ -1,0 +1,7 @@
+<h1>Book Store</h1>
+<% @books.each do |book| %>
+    <h3> <%= book.title %> </h3>
+    <h3> <%= book.author %> </h3>
+    <p> <%= book.description%> </p>
+    <%= link_to "Read More", book_path(book), :class => 'btn btn-default'%>
+<% end %>
